@@ -29,7 +29,7 @@ public class MinisterioDaoJDBC implements IMinisterioDAO {
         List<Ministerio> lista = new ArrayList<>();
 
         String sentenciaSQL = """
-                SELECT * FROM ministerio
+                SELECT * FROM ministerios
                 """;
 
         try (Connection conexion = dataSource.getConnection();
